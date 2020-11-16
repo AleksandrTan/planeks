@@ -1,0 +1,161 @@
+.hellopreloader>p{display:block;}
+.hellopreloader_preload{display: none;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 1000px;
+        background: #406884 url(http://hello-site.ru//main/images/preloads/spinning-circles.svg) center center no-repeat;
+        background-size:41px;
+        opacity: 1;
+    }
+.modal-media-content{
+    max-width: 100%;
+    width: 100%;
+}
+video{
+        vertical-align: middle;
+        background: #000000;
+}
+/*.sticky{*/
+/*    position: sticky;*/
+/*    top: 50px;*/
+/*    background: #fff;*/
+/*    display: block;*/
+/*    overflow: hidden;*/
+/*    z-index: 1;*/
+/*}*/
+
+.card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card video, .card img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.lds-spinner {
+    color: #000000;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #000000;
+}
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.media-container{
+    width: 100%;
+    padding-top: 75%;
+    position: relative; /* If you want text inside of it */
+    background-color: #ffffff;
+}
+
+.media-container video, .media-container img, .media-container .loader-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: contain;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .button-fullscreen{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.card .buttons-wrap{
+    padding: 16px;
+}
+
+.fill-height{
+    min-height: 100vh;
+}
